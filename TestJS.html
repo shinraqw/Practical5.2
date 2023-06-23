@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Цитати відомих письменників</title>
+    <style>
+      /* Стилі для центрування */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      #quote-container {
+        text-align: center;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="button-container">
+      <button onclick="checkAnswer('tolstoy')">Л. Толстой</button>
+      <button onclick="checkAnswer('mickiewicz')">А. Міцкевич</button>
+      <button onclick="checkAnswer('pzhlov')">О. Пахльовська </button>
+      <button onclick="checkAnswer('gogol')">М. Гоголь</button>
+      <button onclick="checkAnswer('france')">А. Франс</button>
+    </div>
+    <div id="quote-container">
+      Раби — це нація, котра не має Слова. Тому й не зможе захистить себе.
+    </div>
+    <script type="text/javascript">
+      function checkAnswer(author) {
+        if (author === "pzhlov") {
+          window.alert("Правильно! Це вислів О. Пахловської");
+        } else if (author === "mickiewicz" || author === "pzhlov" || author === "gogol" || author === "france") {
+          window.alert("Неправильно! Це вислів О. Пахловської");
+        }
+      }
+    </script>
+  </body>
+</html>
